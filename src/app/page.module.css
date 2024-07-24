@@ -1,3 +1,46 @@
+/*
+========================== CUSTOM CSS ============================
+*/
+
+.header {
+  justify-content: start;
+  align-content: start;
+  width: auto;
+  padding: 1rem;
+}
+
+.linkBar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.linkBarItem {
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  align-content: center;
+  background-color: black;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.linkBarItem:hover {
+  transition: 0.5s;
+  background-color: yellow;
+  color: black;
+}
+
+.logo {
+  cursor: default;
+  font-size: large;
+}
+
+/*
+==================================================================
+*/
+
 .main {
   display: flex;
   flex-direction: column;
@@ -105,9 +148,6 @@
   transform: translateZ(0);
 }
 
-.logo {
-  position: relative;
-}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -207,16 +247,6 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 

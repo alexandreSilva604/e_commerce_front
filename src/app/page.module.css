@@ -3,17 +3,29 @@
 */
 
 .header {
-  justify-content: start;
-  align-content: start;
+  text-align: center;
+  align-content: center;
   width: auto;
   padding: 1rem;
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  background-color: black;
+  width: 80%;
+  height: 15rem;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
 }
 
 .linkBar {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
-  justify-content: space-between;
+  margin-top: 2rem;
+  justify-content: space-evenly;
 }
 
 .linkBarItem {
@@ -28,13 +40,18 @@
 
 .linkBarItem:hover {
   transition: 0.5s;
-  background-color: yellow;
+  background-color: white;
   color: black;
+  border: 1px solid black;
 }
 
 .logo {
   cursor: default;
-  font-size: large;
+  font-size: larger;
+}
+
+.footerGroup {
+  margin: 1rem;
 }
 
 /*

@@ -9,16 +9,30 @@
   padding: 1rem;
 }
 
+.homeMain {
+  color: white;
+  width: 65rem;
+  padding: 4rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: rgba(0, 50, 100, 0.75);
+  border-radius: 0.5rem;
+}
+
 .footer {
   position: relative;
   display: flex;
   background-color: black;
-  width: 80%;
+  width: 80rem;
   height: 15rem;
   color: white;
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 0.5rem;
+}
+
+.footerGroup {
+  margin: 1rem;
 }
 
 .linkBar {
@@ -46,12 +60,7 @@
 }
 
 .logo {
-  cursor: default;
   font-size: larger;
-}
-
-.footerGroup {
-  margin: 1rem;
 }
 
 /*

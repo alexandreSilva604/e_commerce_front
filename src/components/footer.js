@@ -1,4 +1,5 @@
 import styles from '../app/page.module.css';
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -6,8 +7,8 @@ export default function Footer() {
         <div style={{display: 'flex', justifyContent: 'center'}}>
             <div className={styles.footer}>
                 <div className={styles.footerGroup}>
-                    <p>Home</p>
-                    <p>Store</p>
+                    <Link href='/'>Home</Link>
+                    <Link href='/store'>Store</Link>
                 </div>
                 <div className={styles.footerGroup}>
                     <p>About</p>

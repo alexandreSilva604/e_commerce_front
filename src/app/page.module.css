@@ -6,7 +6,7 @@
   text-align: center;
   align-content: center;
   width: auto;
-  padding: 1rem;
+  margin: 2rem;
 }
 
 .homeMain {
@@ -14,20 +14,21 @@
   justify-content: space-between;
   align-items: center;
   color: white;
-  width: 65rem;
+  width: 100%;
   background-color: black;
   border-radius: 0.5rem;
 }
 
 .footer {
-  position: relative;
   display: flex;
   background-color: black;
-  width: 80rem;
+  width: 75rem;
   height: 15rem;
   color: white;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
   border-radius: 0.5rem;
 }
 
@@ -40,13 +41,14 @@
 .linkBar {
   display: flex;
   flex-direction: row;
-  margin-top: 2rem;
-  justify-content: space-evenly;
+  margin-top: 2rem;;
 }
 
 .linkBarItem {
   width: 10rem;
   height: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   text-align: center;
   align-content: center;
   background-color: black;
@@ -66,7 +68,31 @@
 }
 
 .mainGroup {
-  margin-left: 4rem;
+  margin: 4rem;
+}
+
+.pageMain {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.sideBar {
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 4rem;
+  height: 95%;
+  margin: 1rem;
+  border-radius: 0.5em;
+  padding: 1rem;
+  top: 0%;
+  left: 0%;
+  justify-content: center;
+  text-align: center;
 }
 
 /*
@@ -78,7 +104,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
 }
 

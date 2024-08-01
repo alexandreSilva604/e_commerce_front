@@ -4,8 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      
+    <div>
       <Link href='/pages/store'>
         <div className={styles.homeMain}>
           <div className={styles.mainGroup}>
@@ -15,6 +14,6 @@ export default function Home() {
           <Image src='/img/shopping-cart.jpg' width={650} height={400} />
         </div>
       </Link>
-    </main>
+    </div>
   );
 }

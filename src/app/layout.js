@@ -3,7 +3,7 @@ import styles from './page.module.css';
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import SideBar from "@/components/sidebar";
+import TopBar from "@/components/topbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,14 +17,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         
-        <SideBar />
+        <TopBar />
         <main className={styles.main}>
-
-          <div className={styles.pageMain}>
-            <Header />
-            {children}
-            <Footer />
-          </div>
+          <Header />
+          {children}
+          <Footer />
+        
         </main>
       </body>
     </html>

@@ -54,7 +54,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  background: linear-gradient(rgb(var(--background-start-rgb)), #fff);
 }
 
 a {

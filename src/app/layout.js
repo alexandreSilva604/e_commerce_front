@@ -17,9 +17,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         
+        <SideBar />
         <main className={styles.main}>
-          
-          <SideBar />
 
           <div className={styles.pageMain}>
             <Header />

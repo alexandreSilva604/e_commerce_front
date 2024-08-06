@@ -2,6 +2,21 @@
 ========================== CUSTOM CSS ============================
 */
 
+.addCartButton {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.addCartButton:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
 .header {
   text-align: center;
   align-content: center;
@@ -68,6 +83,13 @@
   margin: 4rem;
 }
 
+.productDisplay {
+  background-color: #222;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
 .topBar {
   background-color: black;
   color: white;
@@ -81,6 +103,8 @@
 
 .storeMain {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   background-color: black;
   width: 75rem;
@@ -88,8 +112,12 @@
   border-radius: var(--border-radius);
 }
 
+.storeProducts {
+  display: inline-flex;
+
+}
+
 .storeTitle {
-  display: block;
   width: 90%;
   text-align: center;
   justify-content: center;

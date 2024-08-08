@@ -84,10 +84,18 @@
 }
 
 .productDisplay {
+  width: 40%;
+  align-content: start;
+  text-align: center;
   background-color: #222;
   margin: 1rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: var(--border-radius);
+}
+
+.productImage {
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
 }
 
 .topBar {

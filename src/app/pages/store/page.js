@@ -7,9 +7,9 @@ export default function Store() {
         <div className={styles.storeMain}>
             <h1 className={styles.storeTitle}>Store</h1>
             <div className={styles.storeProducts}>
-                <ProductDisplay product={{name: "Test Product 1", price: "$ 10.00"}} />
-                <ProductDisplay product={{name: "Test Product 2", price: "$ 20.00"}} />
-                <ProductDisplay product={{name: "Test Product 3", price: "$ 30.00"}} />
+                <ProductDisplay product={{name: "World's Best Boss Mug", price: "$ 10.00", image: "/img/cup.webp"}} />
+                <ProductDisplay product={{name: "Table", price: "$ 20.00", image: "/img/table.webp"}} />
+                <ProductDisplay product={{name: "Fridge", price: "$ 30.00", image: '/img/fridge.jpeg'}} />
             </div>
         </div>
     )

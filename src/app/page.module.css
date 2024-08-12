@@ -17,6 +17,27 @@
   color: white;
 }
 
+.categoryButton {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  width: 8em;
+  border-radius: var(--border-radius);
+}
+
+.categoryButton:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.categoryDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   text-align: center;
   align-content: center;
@@ -89,13 +110,17 @@
   text-align: center;
   background-color: #222;
   margin: 1rem;
-  padding: 1rem;
   border-radius: var(--border-radius);
 }
 
 .productImage {
-  border-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
   margin-bottom: 1rem;
+}
+
+.productInfo {
+  padding: 1rem;
 }
 
 .topBar {
@@ -112,12 +137,27 @@
 .storeMain {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   background-color: black;
   width: 75rem;
   color: white;
   border-radius: var(--border-radius);
+}
+
+.storeCategories {
+  background-color: #222;
+  width: 15em;
+  height: 31em;
+  margin-right: 10em;
+  align-content: center;
+  text-align: center;
+}
+
+.storeDisplayProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .storeProducts {

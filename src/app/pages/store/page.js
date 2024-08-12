@@ -3,13 +3,33 @@ import ProductDisplay from '@/components/productDisplay';
 
 export default function Store() {
 
+    const categories = ["All", "Bedroom", "Kitchen"];
+    const products = [{ id: 1, name: "World's Best Boss Mug", price: "$ 10.00", image: "/img/cup.webp", category: "Kitchen" },
+                      { id: 2, name: "Table", price: "$ 20.00", image: "/img/table.webp", category: "Bedroom" },
+                      { id: 3, name: "Fridge", price: "$ 30.00", image: '/img/fridge.jpeg', category: "Kitchen"}];
+
     return (
         <div className={styles.storeMain}>
-            <h1 className={styles.storeTitle}>Store</h1>
-            <div className={styles.storeProducts}>
-                <ProductDisplay product={{name: "World's Best Boss Mug", price: "$ 10.00", image: "/img/cup.webp"}} />
-                <ProductDisplay product={{name: "Table", price: "$ 20.00", image: "/img/table.webp"}} />
-                <ProductDisplay product={{name: "Fridge", price: "$ 30.00", image: '/img/fridge.jpeg'}} />
+
+            <div className={styles.storeCategories}>
+                <h2>Categories</h2>
+                <div className={styles.categoriesDisplay}>
+                    {
+                        categories.map((category, index) => {
+                            return <div key={index}><button className={styles.categoryButton}>{category}</button></div>
+                        })
+                    }
+                </div>
+            </div>
+            <div className={styles.storeDisplayProducts}>
+                <h1 className={styles.storeTitle}>Store</h1>
+                <div className={styles.storeProducts}>
+                    {
+                        products.map((product) => {
+                            return <ProductDisplay key={product.id} product={product} />
+                        })
+                    }
+                </div>
             </div>
         </div>
     )

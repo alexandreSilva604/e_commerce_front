@@ -5,10 +5,12 @@ export default function ProductDisplay({product}) {
 
     return (
         <div className={styles.productDisplay}>
-            <Image className={styles.productImage} src={product.image} width={150} height={150} />
-            <p>{product.name}</p>
-            <h3>{product.price}</h3>
-            <div><button className={styles.addCartButton}>Add to Cart</button></div>
+            <Image className={styles.productImage} src={product.image} width={200} height={200} />
+            <div className={styles.productInfo}>
+                <p>{product.name}</p>
+                <h3>{product.price}</h3>
+                <div><button className={styles.addCartButton}>Add to Cart</button></div>
+            </div>
         </div>
     );
 }

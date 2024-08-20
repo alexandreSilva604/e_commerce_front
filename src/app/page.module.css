@@ -28,8 +28,9 @@
 }
 
 .categoryButton:hover {
+  cursor: pointer;
   transition: 0.5s;
-  background-color: black;
+  background-color: #444;
   color: white;
 }
 
@@ -106,9 +107,10 @@
 
 .productDisplay {
   width: 12.5em;
+  height: 24em;
   align-content: start;
   text-align: center;
-  background-color: #222;
+  background-color: black;
   margin: 1rem;
   border-radius: var(--border-radius);
 }
@@ -146,23 +148,31 @@
 }
 
 .storeCategories {
-  background-color: #222;
   width: 15em;
   height: 31em;
-  margin-right: 10em;
+  margin-right: 5em;
   align-content: center;
   text-align: center;
 }
 
 .storeDisplayProducts {
   display: flex;
+  margin: 1em;
+  width: 54em;
+  height: 40em;
   flex-direction: column;
   align-items: center;
 }
 
 .storeProducts {
-  display: inline-flex;
-
+  display: flex;
+  border-radius: var(--border-radius);
+  width: 50em;
+  background-color: #222;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding: 1em;
 }
 
 .storeTitle {

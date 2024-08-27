@@ -48,6 +48,8 @@
 }
 
 .homeMain {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,6 +77,21 @@
   margin: 1rem;
 }
 
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formGroup input {
+  height: 2rem;
+  font-size: large;
+  padding: 0.5rem;
+}
+
 .linkBar {
   display: inline-flex;
   justify-content: space-around;
@@ -93,6 +110,36 @@
 }
 
 .linkBarItem:hover, .homeMain:hover {
+  transition: 0.5s;
+  background-color: #444;
+}
+
+.loginButton {
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+.loginForm {
+  background-color: white;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.5);
+}
+
+.loginForm h1 {
+  margin-bottom: 2rem;
+}
+
+.loginButton:hover {
+  cursor: pointer;
   transition: 0.5s;
   background-color: #444;
 }
@@ -130,13 +177,23 @@
   color: white;
   position: fixed;
   width: 100%;
-  height: 3rem;
   padding: 1rem;
   justify-content: center;
-  text-align: center;
+  text-align: end;
+}
+
+.topBar span {
+  padding: 0.75rem;
+}
+
+.topBar span:hover {
+  transition: 0.5s;
+  background-color: #444;
 }
 
 .storeMain {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -183,6 +240,11 @@
   padding: 10px;
   margin: 1rem;
   border-bottom: 2px solid #444;
+}
+
+.verticalBar {
+  width: 0.1px;
+  background-color: #444;
 }
 
 /*

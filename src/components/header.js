@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <div className={styles.logo}>
-                <Link href='/'><h1>Untitled Store</h1></Link>
+                <h1><Link href='/'>Untitled Store</Link></h1>
             </div>
             <div className={styles.linkBar}>
                 <Link href='/'><h3 className={styles.linkBarItem}>Home</h3></Link>

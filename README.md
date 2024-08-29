@@ -1,6 +1,9 @@
 ## About
 
 A template project intended for e-commerce and other similar applications.
+It contains all the pages needed for small stores.
+
+Please check the Getting Started section if you wish to use this project.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

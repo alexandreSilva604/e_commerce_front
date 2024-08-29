@@ -7,7 +7,7 @@ export default function TopBar() {
         <div className={styles.topBar}>
             <div>
                 <Link href="/pages/login"><span>Login</span></Link>
-                |
+                <span>|</span>
                 <Link href="/pages/signup"><span>Sign Up</span></Link>
             </div>
         </div>

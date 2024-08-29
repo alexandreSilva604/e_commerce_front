@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Link href='/pages/store'>
-        <div className={styles.homeMain}>
+        <div className={styles.contentGroup}>
           <div className={styles.mainGroup}>
             <h1>Welcome</h1>
             <p>Check out our products!</p>

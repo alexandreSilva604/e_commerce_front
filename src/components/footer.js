@@ -4,16 +4,19 @@ import Link from "next/link";
 export default function Footer() {
 
     return (
-        <div style={{display: 'flex', justifyContent: 'center'}}>
-            <div className={styles.footer}>
+        <div className={styles.footer}>
+            <div className={styles.footerPages}>
                 <div className={styles.footerGroup}>
-                    <Link href='/'>Home</Link>
-                    <Link href='/store'>Store</Link>
+                    <Link href='/'><p>Home</p></Link>
+                    <Link href='/store'><p>Store</p></Link>
                 </div>
                 <div className={styles.footerGroup}>
-                    <p>About</p>
-                    <p>Contacts</p>
+                    <Link href='/about'><p>About</p></Link>
+                    <Link href='/contacts'><p>Contacts</p></Link>
                 </div>
+            </div>
+            <div>
+                <p style={{textAlign: 'center'}}>Copyright © 2024-2024 Insert-Company-Name. All rights reserved.</p>
             </div>
         </div>
     )

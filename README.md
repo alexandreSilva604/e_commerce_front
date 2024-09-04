@@ -2,7 +2,7 @@
 
 DISCLAIMER: WORK-IN-PROGRESS
 
-A template project intended for e-commerce and other similar applications. Please check the Getting Started section if you wish to use this.
+A template project intended for e-commerce and other similar applications. Please check the Getting Started section, and/or contact me if you wish to use this.
 Currently, it contains all the basic pages needed for small stores.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

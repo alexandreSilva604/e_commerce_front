@@ -2,16 +2,32 @@
 
 import styles from '@/app/page.module.css';
 import ProductDisplay from '@/components/productDisplay';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Store() {
 
+    const [products, setProducts] = useState([]);
+
+    function loadProducts() {
+
+        fetch("http://localhost:9000/allProducts")
+        .then(r => {
+            return r.json();
+        })
+        .then(r => {
+            setProducts(r);
+        })
+        .catch(e => {
+            console.log(e.message);
+        });
+    }
+
     const [selectedCategory, setSelectedCategory] = useState("All");
-    const categories = ["All", "Bedroom", "Kitchen"];
-    const products = [{ id: 1, name: "World's Best Boss Mug", price: "$ 10.00", image: "/img/cup.webp", category: "Kitchen" },
-                      { id: 2, name: "Table Bedroom", price: "$ 20.00", image: "/img/table.webp", category: "Bedroom" },
-                      { id: 3, name: "Fridge", price: "$ 30.00", image: '/img/fridge.jpeg', category: "Kitchen"},
-                      { id: 4, name: "Table Kitchen", price: "$ 30.00", image: '/img/table.webp', category: "Kitchen"}];
+    const categories = ["All", "Bedroom", "Kitchen", "Living Room"];
+    
+    useEffect(() => {
+        loadProducts();
+    }, []);
 
     return (
         <div className={styles.storeMain}>
@@ -34,12 +50,18 @@ export default function Store() {
                 <h1 className={styles.storeTitle}>Store</h1>
                 <div className={styles.storeProducts}>
                     {
-                        products.map((product) => {
+                        products.length > 0 && (selectedCategory == "All") || products.find((product) => product.category == selectedCategory) ?
+                            products.map((product) => {
 
-                            if (selectedCategory == "All" || product.category == selectedCategory) {
-                                return <ProductDisplay key={product.id} product={product} />
-                            }
-                        })
+                                if (selectedCategory == "All" || product.category == selectedCategory) {
+                                    return <ProductDisplay key={product.id} product={product} />
+                                }
+                            })
+                        :
+                        selectedCategory == "All" ?
+                        <h2>There are no products available.</h2>
+                        :
+                        <h2>There are no products in this category.</h2>
                     }
                 </div>
             </div>
